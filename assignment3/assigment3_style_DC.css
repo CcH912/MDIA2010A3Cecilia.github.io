@@ -1,0 +1,248 @@
+html, body {
+    margin: 0;
+    padding: 10px;
+    height: 100%;
+    background-image: url('image/DC背景.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;        
+    background-position: center;   
+    background-attachment: fixed;  
+}
+
+.container {
+    background: linear-gradient(to bottom, rgba(5, 89, 19, 0.95), rgba(178, 255, 231, 0.95));
+    color: lightgoldenrodyellow;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto 40px;      
+    padding: 40px 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;  
+  flex-wrap: nowrap;            
+  align-items: center;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, rgba(5, 89, 19, 0.95), rgba(178, 255, 231, 0.95));
+  gap: 20px;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar button {
+  background: white;
+  color: black;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  font-size: 1.1em;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.navbar button:last-child {
+  margin-left: auto;
+}
+
+.navbar a {
+    color: lightgoldenrodyellow;
+    text-decoration: none;
+    margin: 16px auto;
+    max-width: 800px;
+    padding: 8px;
+    line-height: 1.6;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;  
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;  
+    margin: 0;
+    padding: 20px;
+}
+
+.highlight {
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.05); 
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+#homepage {
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#homepage p {
+    margin: 16px auto;
+    max-width: 800px;
+    padding: 8px;
+    line-height: 1.6;
+}
+
+.color-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 60px);
+  grid-gap: 10px;
+  margin: 20px auto;
+  width: max-content;
+}
+
+.color-grid .memory-cell {
+  width: 60px;
+  height: 60px;
+  background-color: hsl(142, 71%, 80%);
+  border-radius: 8px;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+
+.color-grid .memory-cell.selected {
+  background-color: hsl(148, 70%, 50%);
+  box-shadow: 0 0 10px hsl(148, 70%, 50%);
+}
+
+#status {
+    margin-top: 10px;
+    color: black;
+    font-style: italic;
+}
+
+.profile_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+   gap: 300px;
+  padding: 0 40px;
+}
+
+.profile_text p {
+    margin: 16px auto;
+    max-width: 800px;
+    padding: 8px;
+    line-height: 1.6;
+    flex: 1;
+    text-align: left;
+}
+
+.profile_image img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+   text-align: right;
+}
+
+#interaction {
+    flex-direction: column; 
+    align-items: center;   
+}
+
+#interaction p {
+    margin: 16px auto;
+    max-width: 800px;
+    padding: 8px;
+    line-height: 1.6;
+}
+
+#interaction button {
+    display: block;
+    margin: 40px auto;  
+    background: white;
+    color: black;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    font-size: 1.1em;
+    padding: 20px 40px;
+}
+
+#years {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    max-height: none;          
+    overflow-y: visible;      
+    margin-bottom: 20px;
+}
+
+#years h2 {
+    text-align: center;
+    font-size: 24px;  
+    margin: 0;
+    padding: 20px;
+}
+
+#years p {
+    margin: 16px auto;
+    max-width: 800px;
+    text-indent: 2em;
+    padding: 8px;
+    line-height: 1.6;
+}
+
+#media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+#media h2 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#media p {
+    margin: 16px auto;
+    max-width: 800px;
+    padding: 8px;
+    line-height: 1.6;
+}
+
+#media .cursorvideo {
+    cursor: url('image/cursorvideo.png'), auto;
+}
+
+#media video {
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: block;
+    margin: 0 auto;
+}

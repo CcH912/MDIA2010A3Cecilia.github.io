@@ -1,0 +1,82 @@
+<html>
+
+<head>
+
+    <meta charset="UTF-8" http-equiv="refresh" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Commons</title>
+    <link rel="stylesheet" type="text/css" href="assigment3_style_DC.css">
+    <script src="assignment3_java_DC.js"></script>
+
+</head>
+
+<body>
+<div class="navbar">
+
+    <a href="#homepage">Home</a>
+    <a href="#2043_years">2043</a>
+    <a href="#media">Visual Pulse</a>
+    <button onclick="window.location.href='assignment3_index_DS.html'">Back</button>
+
+</div>
+
+
+    <div id="homepage" class="container">
+       
+        <h1>Welcome to Dream Commons</h1>
+
+        <p>You're now a member of Dream Commons.</p>
+
+    </div>
+
+    <div id="years" class="container">
+
+        <h2>Invitation Activities</h2>
+
+        <p>A chronological record of DreamSync system updates, features, and behavioral policies.</p>
+
+        <div id="2043_years" class="container">
+
+            <div class="highlight">
+
+                <h2>2043</h2>
+
+                <div id="interaction" class="container">
+
+                    <p>Select memory fragments and submit a request to seal them.</p >
+
+                    <div class="color-grid" id="memoryGrid"></div>
+
+                    <button onclick="MemorySeal()">Submit Memory Seal Request</button>
+
+                </div>
+
+                <div id="interaction" class="container">
+                    <p>Click the button to upload your dream for the Trauma Healing Showcase</p> 
+                    <button onclick="performDream()">Upload for Festival</button>
+                    <div id="status"></div>
+                </div>
+
+            </div>
+
+        </div>
+    
+    </div>
+
+    <div id="media" class="container">
+        
+        <h2>Memory Moments</h2>
+
+        <div onclick="createVideo()" class="container cursorvideo" id="createElement">
+
+            <div id="VideoContainer">
+
+                <p>Click here to filter and check segments</p>
+
+            </div>
+        </div>
+    </div>
+
+</body>   
+
+
+

@@ -1,0 +1,257 @@
+<html>
+<!-- 
+REFERENCES:
+
+1. Appel, L., Kisonas, E., Appel, E., Klein, J., Bartlett, D., & Rosenberg, J. (2020). A pilot investigation into brain-computer interface use during a lucid dream. International Journal of Dream Research, 13(1), 64-73. https://journals.ub.uni-heidelberg.de/index.php/IJoDR/article/view/68010
+
+2. Konkoly, K. R., Appel, K., Chabani, E., Mangiaruga, A., Gott, J., Mallett, R., ... & Paller, K. A. (2020). Dream engineering: Simulating worlds through sensory stimulation. Consciousness and Cognition, 83, 102979. https://doi.org/10.1016/j.concog.2020.102979
+
+3. Jang, D., Jhala, R., Lerner, S., & Shacham, H. (2010). An empirical study of privacy-violating information flows in JavaScript web applications. In Proceedings of the 17th ACM conference on Computer and communications security (pp. 270-283). https://doi.org/10.1145/1866307.1866339
+
+4. Islam, M. R., Tanaka, T., & Molla, M. K. I. (2023). Brain–computer interface: trend, challenges, and threats. Brain Informatics, 10(1), 20. https://doi.org/10.1186/s40708-023-00199-3
+
+5. Bélanger, F., & Crossler, R. E. (2011). Privacy in the digital age: a review of information privacy research in information systems. MIS Quarterly, 35(4), 1017-1041. https://www.jstor.org/stable/41409971
+-->
+<head>
+
+    <meta charset="UTF-8" http-equiv="refresh" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamSync</title>
+    <link rel="stylesheet" type="text/css" href="assigment3_style_DS.css">
+    <script src="assignment3_java_DS.js"></script>
+
+</head>
+
+<body>
+<div class="navbar">
+
+    <a href="#homepage">Home</a>
+    <a href="#profile">Personal Information</a>
+    <a href="#gallery">Dream Interface</a>
+    <a href="#2037_years">2037</a>
+    <a href="#2041_years">2041</a>
+    <a href="#2043_years">2043</a>
+    <a href="#2044_years">2044</a>
+    <a href="#2046_years">2046</a>
+    <a href="#2048_years">2048</a>
+    <button onclick="window.location.href='assignment3_login_DS.html'">Log Out</button>
+
+</div>
+
+
+    <div id="homepage" class="container">
+       
+        <h1>Welcome to DreamSync</h1>
+
+        <p>You are now connected to DreamSync.</p>
+
+    </div>
+
+    <div id="profile" class="container">
+
+        <h2>Personal Information</h2>
+
+        <div class="profile_content">
+
+            <div class="profile_text">
+
+                <p>Username: Vionica</p>
+                <p>ID Code: DS-07-3501</p>
+                <p>Gender: Female</p>
+                <p>Age: 24</p>
+                <p>Emotional Index: 43% stability</p>
+                <p>Risk Status: Moderate</p>
+
+            </div>
+
+            <div class="profile_image">
+
+                <img src="image/简介DS.PNG" alt="personal image">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="gallery" class="container">
+
+        <h2>Dream Interface</h2>
+        
+        <div class="row">
+
+            <div class="column">
+
+                <img src="image/接口.png" alt="Brainwave Synchronization Interface">
+                
+            </div>
+
+            <div class="column">
+                
+                <img src="image/个人.png" alt="Personal Dream Dashboard">
+                
+            </div>
+
+            <div class="column">
+
+                <img src="image/碎片.png" alt="Dream Fragment Visualization">
+                
+            </div>
+
+            <div class="column">
+                
+                <img src="image/交易.png" alt="Emotional Data Trading Market">
+                
+            </div>
+                
+            <div class="column">
+
+                <img src="image/等级.png" alt="Dream Grading System">
+                
+            </div>
+
+            <div class="column">
+
+                <img src="image/梦权.png" alt="Dream Rights and Free Dreamers">
+                
+            </div>
+              
+        </div>
+
+    </div>
+
+    <div id="music" class="container">
+
+        <h2>Enter a World of Sonic Emotion</h2>
+
+        <div onclick="playAudio()" class="container cursoraudio" id="createElement">
+
+            <div id="AudioContainer">
+
+                <p>Click here to unlock a world of sound and emotion</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="years" class="container">
+
+        <h2>System Update Records</h2>
+
+        <p>A chronological record of DreamSync system updates, features, and behavioral policies.</p>
+
+        <div id="2037_years" class="container">
+
+            <div class="highlight">
+
+                <h2>2037</h2>
+
+                <div id="interaction" class="container">
+
+                    <p>Click the button to explore and synchronize your dream shards</p>
+
+                    <button onclick="exploBtn()">Explore Dream Shards</button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="2041_years" class="container">
+
+            <div class="highlight">
+
+                <h2>2041</h2>
+
+                <div id="interaction" class="container">
+
+                    <p>Click the button to submit your dream for psychological compatibility analysis</p>
+
+                    <button onclick="evaluateBtn()">Submit Dream for Evaluation</button>
+
+                </div>
+            
+            </div>
+
+        </div>
+
+        <div id="2043_years" class="container">
+
+            <div class="highlight">
+
+                <h2>2043</h2>
+
+                <p>You have been invited to participate in Dream Commons</p>
+
+                <div id="interaction" class="container"> 
+                    
+                    <p>Click below to review your eligibility and begin your transition</p> 
+
+                    <button onclick="window.location.href='assignment3_index_DC.html'">Join Dream Commons</button>
+
+                </div>
+            
+            </div>
+
+        </div>
+
+        <div id="2044_years" class="container">
+
+            <div class="highlight">
+
+                <h2>2044</h2>
+
+                <div id="interaction" class="container">
+
+                    <p>Click the button to report unauthorized use of your dream in advertising</p> 
+
+                    <button onclick="reportAd()">Report the Advertisement</button>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div id="2046_years" class="container">
+
+            <div class="highlight">
+
+                <h2>2046</h2>
+
+                <div id="interaction" class="container">
+
+                    <p>Click the button to classify your dream and receive an emotional stability status</p>
+
+                    <button onclick="classifyDream()">Classify Dream</button>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div id="2048_years" class="container">
+
+            <div class="highlight">
+
+                <h2>2048</h2>
+
+                <div id="interaction" class="container">
+
+                    <p>Click the button below to disconnect from the DreamSync network</p>
+
+                    <button onclick="window.location.href='assignment3_index_DStoFD.html'">Disconnect & Liberate</button>
+
+                </div>
+
+            </div>
+
+        </div>
+    
+    </div>
+
+</body>   
+
+
+

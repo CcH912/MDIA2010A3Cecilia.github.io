@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Helvetica', sans-serif;
+}
+
+#message {
+    color: lightgoldenrodyellow;;
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    opacity: 0;
+    transition: opacity 1s ease;
+    max-width: 80%;
+    line-height: 1.5;
+    -webkit-text-stroke: 0.5px black;
+    margin-bottom: 40px;
+}
+
+#button_container {
+    display: none;
+    gap: 20px;
+}
+
+button {
+    font-size: 1.5em;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: lightgoldenrodyellow;;
+    color: black;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(245, 238, 14);
+}
+
+button:active {
+    background-color: rgb(245, 238, 14);
+}
