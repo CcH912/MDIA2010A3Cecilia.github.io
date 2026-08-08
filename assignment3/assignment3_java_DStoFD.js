@@ -34,7 +34,7 @@ function onClickBody() {
 }
 
 joinBtn.addEventListener("click", () => {
-    window.location.href = "assignment3_signUp_FD.html";
+    window.location.href = "assignment3_signup_FD.html";
 });
 
 noJoinBtn.addEventListener("click", () => {
